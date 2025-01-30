@@ -1,4 +1,6 @@
 # Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+# Entrada: 4 notas
+# saida: media das 4 notas
 
 nota_bim = int(input("Informe 1a a nota: "))
 nota_bim2 = int(input("Informe 2a a nota: "))
