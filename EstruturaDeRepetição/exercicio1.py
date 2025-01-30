@@ -4,9 +4,15 @@
 # Saída: Informação caso a nota seja invalida
 
 nota = int(input("Informe uma nota: "))
+is_dentro_do_while = True
 
-while nota < 0 or nota > 10:
-    print("A nota informada não é válida")
-    nota = int(input("Informe novamente uma nota: "))
+while is_dentro_do_while:
+    if nota < 0 or nota > 10:
+        is_dentro_do_while = True
+        print("A nota informada não é válida")
+        nota = int(input("Informe novamente uma nota: "))
+    else:
+        is_dentro_do_while = False
+
 
 print("Valeu vadia")
